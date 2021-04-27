@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-09-2020 a las 07:27:33
--- Versión del servidor: 10.4.13-MariaDB
--- Versión de PHP: 7.4.7
+-- Tiempo de generación: 27-04-2021 a las 06:24:13
+-- Versión del servidor: 10.4.17-MariaDB
+-- Versión de PHP: 7.3.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `sports`
+-- Base de datos: `sport`
 --
 
 -- --------------------------------------------------------
@@ -118,7 +118,6 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id_user`, `name`, `last_name`, `email`, `password`, `admin`) VALUES
 (1, '', '', 'admin', 'admin', 1),
-(2, 'Nico', 'Morales', 'nicomorales1597@gmail.com', '123', 0),
 (3, 'Juan', 'Castillo', 'Juan_Castillo@gmail.com', '456', 0);
 
 --
@@ -161,7 +160,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id_categorie` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_categorie` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `products`
